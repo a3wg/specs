@@ -1,0 +1,115 @@
+# GitHub Pages site for a3wg.org, built from this repository as it is, with
+# the Just the Docs theme. README.md files are the index of their directory,
+# and links between .md files become links between pages.
+#
+# The sidebar is set here, under `defaults`, rather than in front matter, so
+# that the Markdown files read cleanly on github.com. A new page needs an
+# entry below, or it will not appear in the sidebar.
+title: A3
+description: Accountable Agent Action. Specifications for verifiable authority, approval and records of what AI agents did.
+url: https://a3wg.org
+repository: a3wg/specs
+
+remote_theme: just-the-docs/just-the-docs@v0.12.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links
+  - jekyll-readme-index
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+
+relative_links:
+  enabled: true
+  collections: false
+readme_index:
+  enabled: true
+  remove_originals: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .jekyll-cache/
+  - _site/
+
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 2
+heading_anchors: true
+back_to_top: true
+enable_copy_code_button: true
+color_scheme: light
+
+aux_links:
+  "GitHub":
+    - "https://github.com/a3wg/specs"
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/a3wg/specs"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
+footer_content: 'The A3 specifications are published under the <a href="https://github.com/CommunitySpecification/1.0">Community Specification License 1.0</a>. Contact: <a href="mailto:info@a3wg.org">info@a3wg.org</a>.'
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+
+  - scope: { path: "README.md" }
+    values: { title: Home, nav_order: 1 }
+
+  - scope: { path: "core/README.md" }
+    values: { title: Core, nav_order: 2, has_children: true }
+  - scope: { path: "core/decision-trace.md" }
+    values: { title: Decision Trace Format, parent: Core, nav_order: 1 }
+  - scope: { path: "core/approval-protocol.md" }
+    values: { title: Approval Protocol, parent: Core, nav_order: 2 }
+  - scope: { path: "core/capability-schema.md" }
+    values: { title: Capability Schema, parent: Core, nav_order: 3 }
+  - scope: { path: "core/authority-envelope.md" }
+    values: { title: Authority Envelope, parent: Core, nav_order: 4 }
+  - scope: { path: "core/organisation.md" }
+    values: { title: Organisation Schema, parent: Core, nav_order: 5 }
+  - scope: { path: "core/key-discovery.md" }
+    values: { title: Key Discovery (draft), parent: Core, nav_order: 6 }
+
+  - scope: { path: "bindings/README.md" }
+    values: { title: Bindings, nav_order: 3, has_children: true }
+  - scope: { path: "bindings/kubernetes.md" }
+    values: { title: Kubernetes (draft), parent: Bindings, nav_order: 1 }
+
+  - scope: { path: "profiles/README.md" }
+    values: { title: Profiles, nav_order: 4 }
+
+  - scope: { path: "vectors/README.md" }
+    values: { title: Test vectors, nav_order: 5, has_children: true }
+  - scope: { path: "vectors/decision-trace/README.md" }
+    values: { title: Decision Trace vectors, parent: Test vectors, nav_order: 1 }
+  - scope: { path: "vectors/approval-protocol/README.md" }
+    values: { title: Approval Protocol vectors, parent: Test vectors, nav_order: 2 }
+  - scope: { path: "vectors/capability-schema/README.md" }
+    values: { title: Capability Schema vectors, parent: Test vectors, nav_order: 3 }
+  - scope: { path: "vectors/authority-envelope/README.md" }
+    values: { title: Authority Envelope vectors, parent: Test vectors, nav_order: 4 }
+  - scope: { path: "vectors/organisation/README.md" }
+    values: { title: Organisation Schema vectors, parent: Test vectors, nav_order: 5 }
+
+  - scope: { path: "SCOPE.md" }
+    values: { title: Scope, nav_order: 10 }
+  - scope: { path: "GOVERNANCE.md" }
+    values: { title: Governance, nav_order: 11 }
+  - scope: { path: "CONTRIBUTING.md" }
+    values: { title: Contributing, nav_order: 12 }
+  - scope: { path: "CONTRIBUTOR-LICENSE-AGREEMENT.md" }
+    values: { title: Contributor License Agreement, nav_order: 13 }
+  - scope: { path: "SECURITY.md" }
+    values: { title: Security, nav_order: 14 }
+  - scope: { path: "NOTICES.md" }
+    values: { title: Notices, nav_order: 15 }
+  - scope: { path: "LICENSE.md" }
+    values: { title: Licenses, nav_order: 16 }
+
+# Diagrams in ```mermaid blocks; GitHub renders the same blocks natively.
+mermaid:
+  version: "11.17.2"

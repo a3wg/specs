@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_DECLARATION_SCOPE",
+      "seq": 3
+    }
+  ]
+}

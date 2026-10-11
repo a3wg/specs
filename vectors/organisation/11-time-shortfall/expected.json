@@ -1,0 +1,10 @@
+{
+  "result": "COHERENT",
+  "findings": [
+    {
+      "code": "C_TIME_SHORTFALL",
+      "severity": "warning",
+      "subject": "engineer"
+    }
+  ]
+}

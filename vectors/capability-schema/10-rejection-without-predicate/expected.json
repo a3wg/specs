@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_REJECTION_REASON",
+      "seq": 2
+    }
+  ]
+}

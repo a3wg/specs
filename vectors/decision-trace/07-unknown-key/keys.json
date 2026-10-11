@@ -1,0 +1,46 @@
+{
+  "keys": [
+    {
+      "kid": "cp-2026-09",
+      "alg": "Ed25519",
+      "pub": "w4GEKbpRth00glxRU2OwW7LU9l6ZZJkv937G5LZyc3M",
+      "component": "control-plane",
+      "valid_from": "2026-09-01T00:00:00.000Z",
+      "valid_to": "2026-12-01T00:00:00.000Z"
+    },
+    {
+      "kid": "supervisor-node-a1-2026-09",
+      "alg": "Ed25519",
+      "pub": "MpPXDdxSFciYo2kzAZirKW0IrT-3Dqm6aQEQBGmId9Y",
+      "component": "supervisor",
+      "valid_from": "2026-09-01T00:00:00.000Z",
+      "valid_to": "2026-12-01T00:00:00.000Z"
+    },
+    {
+      "kid": "gateway-2026-09",
+      "alg": "Ed25519",
+      "pub": "Z4eeRjmV-2-EZB361FpBkHg7jMtG0_kmKLIkgzXgkyg",
+      "component": "gateway",
+      "valid_from": "2026-09-01T00:00:00.000Z",
+      "valid_to": "2026-12-01T00:00:00.000Z"
+    },
+    {
+      "kid": "cp-2025-01",
+      "alg": "Ed25519",
+      "pub": "LuW5kT-7HdkqF3VAjJr23kRozYwd0WRkDziY6nSciLQ",
+      "component": "control-plane",
+      "valid_from": "2025-01-01T00:00:00.000Z",
+      "valid_to": "2025-04-01T00:00:00.000Z"
+    },
+    {
+      "kid": "gateway-node-b2-2026-09",
+      "alg": "Ed25519",
+      "pub": "d4NCYj9mWTSIxnni-Hh69N98a-TR7H7YW79bTM5Xfc8",
+      "component": "gateway",
+      "valid_from": "2026-09-01T00:00:00.000Z",
+      "valid_to": "2026-12-01T00:00:00.000Z",
+      "revoked_at": "2026-09-16T14:00:01.400Z",
+      "revocation_reason": "node b2 seized; key presumed copied"
+    }
+  ]
+}

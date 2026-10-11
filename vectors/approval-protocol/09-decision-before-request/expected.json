@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_DECISION_ORDER",
+      "seq": 6
+    }
+  ]
+}

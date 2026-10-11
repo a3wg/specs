@@ -1,0 +1,40 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_PREV_HASH",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-6a7b8c9d0e1f",
+      "seq": 3
+    },
+    {
+      "code": "E_SEQ",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-6a7b8c9d0e1f",
+      "seq": 3
+    },
+    {
+      "code": "E_TS_ORDER",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-6a7b8c9d0e1f",
+      "seq": 3
+    },
+    {
+      "code": "E_PREV_HASH",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-6a7b8c9d0e1f",
+      "seq": 4
+    },
+    {
+      "code": "E_SEQ",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-6a7b8c9d0e1f",
+      "seq": 4
+    },
+    {
+      "code": "E_PREV_HASH",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-6a7b8c9d0e1f",
+      "seq": 5
+    },
+    {
+      "code": "E_SEQ",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-6a7b8c9d0e1f",
+      "seq": 5
+    }
+  ]
+}

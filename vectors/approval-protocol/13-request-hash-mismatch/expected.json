@@ -1,0 +1,13 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_PLAN_HASH",
+      "seq": 6
+    },
+    {
+      "code": "E_PLAN_MISMATCH",
+      "seq": 9
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "result": "COHERENT",
+  "findings": [
+    {
+      "code": "C_UNREACHABLE_ROLE",
+      "severity": "warning",
+      "subject": "archivist"
+    }
+  ]
+}

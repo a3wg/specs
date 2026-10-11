@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_REQUIREMENTS_MISMATCH",
+      "seq": 3
+    }
+  ]
+}

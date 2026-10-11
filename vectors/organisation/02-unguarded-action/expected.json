@@ -1,0 +1,15 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_UNGUARDED_ACTION",
+      "severity": "error",
+      "subject": "engineer"
+    },
+    {
+      "code": "C_UNREACHABLE_ROLE",
+      "severity": "warning",
+      "subject": "reviewer"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_RESIDENCY_UNMET",
+      "seq": 3
+    }
+  ]
+}

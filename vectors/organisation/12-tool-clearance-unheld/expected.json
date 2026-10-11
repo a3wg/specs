@@ -1,0 +1,20 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_TOOL_CLEARANCE_UNHELD",
+      "severity": "error",
+      "subject": "refunds"
+    },
+    {
+      "code": "C_UNREACHABLE_ROLE",
+      "severity": "warning",
+      "subject": "engineer"
+    },
+    {
+      "code": "P_UNREACHABLE_ACTION",
+      "severity": "note",
+      "subject": "engineer"
+    }
+  ]
+}

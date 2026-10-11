@@ -1,0 +1,262 @@
+{
+  "v": "1.0",
+  "organisation": {
+    "name": "example"
+  },
+  "roles": [
+    {
+      "name": "manager",
+      "capabilities": [
+        {
+          "name": "case.triage",
+          "version": 1
+        }
+      ],
+      "clearances": [
+        "orders.read",
+        "refunds.issue"
+      ],
+      "memory": [
+        {
+          "store": "case-log",
+          "mode": "read"
+        }
+      ],
+      "delegation": {
+        "max_depth": 1,
+        "max_per_task": 3,
+        "kinds": [
+          {
+            "name": "investigate-order",
+            "description": "Find out what went wrong, from the order records.",
+            "capabilities": [
+              {
+                "name": "order.investigate",
+                "version": 1
+              }
+            ],
+            "tools": [
+              "orders"
+            ]
+          },
+          {
+            "name": "refund-line",
+            "description": "Refund a line the customer never received.",
+            "capabilities": [
+              {
+                "name": "refund.issue",
+                "version": 1
+              }
+            ],
+            "clearances": [
+              "refunds.issue"
+            ],
+            "tools": [
+              "refunds"
+            ]
+          },
+          {
+            "name": "record-case",
+            "description": "File the case record for the next shift.",
+            "capabilities": [
+              {
+                "name": "case.record",
+                "version": 1
+              }
+            ]
+          }
+        ]
+      },
+      "limits": {
+        "budget": {
+          "tokens": 25000,
+          "wall_clock_ms": 1500000
+        }
+      }
+    },
+    {
+      "name": "analyst",
+      "capabilities": [
+        {
+          "name": "order.investigate",
+          "version": 1
+        }
+      ],
+      "clearances": [
+        "orders.read"
+      ],
+      "tools": [
+        {
+          "name": "orders",
+          "mode": "read"
+        }
+      ],
+      "limits": {
+        "budget": {
+          "tokens": 10000,
+          "wall_clock_ms": 180000
+        }
+      }
+    },
+    {
+      "name": "engineer",
+      "capabilities": [
+        {
+          "name": "refund.issue",
+          "version": 1
+        }
+      ],
+      "clearances": [
+        "orders.read",
+        "refunds.issue"
+      ],
+      "tools": [
+        {
+          "name": "refunds",
+          "mode": "invoke"
+        }
+      ],
+      "limits": {
+        "budget": {
+          "tokens": 10000,
+          "wall_clock_ms": 120000
+        }
+      }
+    },
+    {
+      "name": "reviewer",
+      "capabilities": [
+        {
+          "name": "action.verify",
+          "version": 1
+        }
+      ],
+      "clearances": [
+        "orders.read"
+      ],
+      "limits": {
+        "budget": {
+          "tokens": 8000,
+          "wall_clock_ms": 120000
+        }
+      }
+    },
+    {
+      "name": "scribe",
+      "capabilities": [
+        {
+          "name": "case.record",
+          "version": 1
+        }
+      ],
+      "clearances": [
+        "orders.read"
+      ],
+      "memory": [
+        {
+          "store": "case-log",
+          "mode": "write"
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "orders",
+      "side_effect": "read"
+    },
+    {
+      "name": "refunds",
+      "side_effect": "mutating",
+      "requires_clearances": [
+        "refunds.issue"
+      ],
+      "operations": [
+        {
+          "name": "bounce",
+          "side_effect": "mutating",
+          "dry_run": true
+        }
+      ]
+    }
+  ],
+  "stores": [
+    {
+      "name": "case-log",
+      "scope": "tenant"
+    }
+  ],
+  "gates": [
+    {
+      "name": "refund-approvals",
+      "matches": {
+        "side_effect": [
+          "mutating",
+          "destructive"
+        ],
+        "tools": [
+          "refunds"
+        ]
+      },
+      "approvers": {
+        "groups": [
+          "refund-leads"
+        ],
+        "quorum": 1
+      },
+      "verifier": {
+        "capabilities": [
+          {
+            "name": "action.verify",
+            "version": 1
+          }
+        ],
+        "anti_affinity": true
+      },
+      "timeout_ms": 600000,
+      "on_timeout": "deny"
+    }
+  ],
+  "entries": [
+    {
+      "name": "intake",
+      "steps": [
+        {
+          "name": "triage",
+          "requirements": {
+            "v": "1.0",
+            "capabilities": [
+              {
+                "name": "case.triage",
+                "version": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "principals": [
+    {
+      "id": "sub|lead",
+      "type": "human",
+      "clearances": [
+        "orders.read",
+        "refunds.issue"
+      ],
+      "groups": [
+        "refund-leads"
+      ]
+    },
+    {
+      "id": "sub|officer",
+      "type": "human",
+      "clearances": [
+        "orders.read"
+      ],
+      "groups": [
+        "duty"
+      ]
+    }
+  ]
+}

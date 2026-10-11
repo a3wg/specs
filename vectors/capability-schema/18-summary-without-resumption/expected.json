@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_EXPLANATION",
+      "seq": 5
+    }
+  ]
+}

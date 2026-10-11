@@ -1,0 +1,10 @@
+{
+  "result": "COHERENT",
+  "findings": [
+    {
+      "code": "C_NO_DRY_RUN",
+      "severity": "note",
+      "subject": "refunds/bounce"
+    }
+  ]
+}

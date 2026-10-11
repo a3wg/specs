@@ -1,0 +1,10 @@
+{
+  "result": "COHERENT",
+  "findings": [
+    {
+      "code": "C_STORE_NO_READER",
+      "severity": "warning",
+      "subject": "case-log"
+    }
+  ]
+}

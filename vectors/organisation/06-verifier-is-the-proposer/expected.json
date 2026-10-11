@@ -1,0 +1,15 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_NO_VERIFIER",
+      "severity": "error",
+      "subject": "refund-approvals"
+    },
+    {
+      "code": "P_UNREACHABLE_ACTION",
+      "severity": "note",
+      "subject": "reviewer"
+    }
+  ]
+}

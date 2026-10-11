@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_APPROVAL_MISSING",
+      "seq": 7
+    }
+  ]
+}

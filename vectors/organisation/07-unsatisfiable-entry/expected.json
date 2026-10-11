@@ -1,0 +1,30 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_UNSATISFIABLE_ENTRY",
+      "severity": "error",
+      "subject": "intake/triage"
+    },
+    {
+      "code": "C_UNREACHABLE_ROLE",
+      "severity": "warning",
+      "subject": "analyst"
+    },
+    {
+      "code": "C_UNREACHABLE_ROLE",
+      "severity": "warning",
+      "subject": "engineer"
+    },
+    {
+      "code": "C_UNREACHABLE_ROLE",
+      "severity": "warning",
+      "subject": "manager"
+    },
+    {
+      "code": "C_UNREACHABLE_ROLE",
+      "severity": "warning",
+      "subject": "scribe"
+    }
+  ]
+}

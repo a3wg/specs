@@ -1,0 +1,13 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_OUTCOME",
+      "seq": 8
+    },
+    {
+      "code": "E_VALIDITY",
+      "seq": 8
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_CAPABILITY_UNMET",
+      "seq": 3
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_CHILD_WIDENED",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-00000000c1d0",
+      "seq": 2
+    },
+    {
+      "code": "E_INTERSECTION",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-00000000c1d0",
+      "seq": 2
+    }
+  ]
+}

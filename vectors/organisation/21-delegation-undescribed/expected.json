@@ -1,0 +1,10 @@
+{
+  "result": "COHERENT",
+  "findings": [
+    {
+      "code": "C_DELEGATION_UNDESCRIBED",
+      "severity": "note",
+      "subject": "manager"
+    }
+  ]
+}

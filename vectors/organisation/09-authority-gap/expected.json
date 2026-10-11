@@ -1,0 +1,15 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_AUTHORITY_GAP",
+      "severity": "error",
+      "subject": "manager"
+    },
+    {
+      "code": "P_AUTHORITY_DEAD_END",
+      "severity": "warning",
+      "subject": "engineer"
+    }
+  ]
+}

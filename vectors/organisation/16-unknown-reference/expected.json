@@ -1,0 +1,10 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_UNKNOWN_REFERENCE",
+      "severity": "error",
+      "subject": "analyst"
+    }
+  ]
+}

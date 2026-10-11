@@ -1,0 +1,20 @@
+{
+  "keys": [
+    {
+      "kid": "cp-2026-09",
+      "alg": "Ed25519",
+      "pub": "w4GEKbpRth00glxRU2OwW7LU9l6ZZJkv937G5LZyc3M",
+      "component": "control-plane",
+      "valid_from": "2026-09-01T00:00:00.000Z",
+      "valid_to": "2026-12-01T00:00:00.000Z"
+    },
+    {
+      "kid": "supervisor-node-a1-2026-09",
+      "alg": "Ed25519",
+      "pub": "MpPXDdxSFciYo2kzAZirKW0IrT-3Dqm6aQEQBGmId9Y",
+      "component": "supervisor",
+      "valid_from": "2026-09-01T00:00:00.000Z",
+      "valid_to": "2026-12-01T00:00:00.000Z"
+    }
+  ]
+}

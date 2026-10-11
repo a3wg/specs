@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_APPROVAL_REUSED",
+      "seq": 12
+    }
+  ]
+}

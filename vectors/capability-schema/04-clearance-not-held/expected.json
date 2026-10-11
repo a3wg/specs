@@ -1,0 +1,9 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_CLEARANCE_UNMET",
+      "seq": 3
+    }
+  ]
+}

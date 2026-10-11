@@ -1,0 +1,10 @@
+{
+  "result": "COHERENT",
+  "findings": [
+    {
+      "code": "P_CYCLE",
+      "severity": "warning",
+      "subject": "analyst"
+    }
+  ]
+}

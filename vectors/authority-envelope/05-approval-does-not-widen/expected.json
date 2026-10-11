@@ -1,0 +1,10 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_ACTION_UNAUTHORISED",
+      "trace_id": "019267b4-2a1e-7c3d-8e5f-6a7b8c9d0e1f",
+      "seq": 4
+    }
+  ]
+}

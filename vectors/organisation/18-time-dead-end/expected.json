@@ -1,0 +1,10 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "P_TIME_DEAD_END",
+      "severity": "error",
+      "subject": "engineer"
+    }
+  ]
+}

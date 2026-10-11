@@ -1,0 +1,10 @@
+{
+  "result": "COHERENT",
+  "findings": [
+    {
+      "code": "P_DEPTH_EXCEEDED",
+      "severity": "warning",
+      "subject": "analyst"
+    }
+  ]
+}

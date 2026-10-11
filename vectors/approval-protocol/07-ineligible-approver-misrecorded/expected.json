@@ -1,0 +1,17 @@
+{
+  "result": "INVALID",
+  "errors": [
+    {
+      "code": "E_OUTCOME",
+      "seq": 7
+    },
+    {
+      "code": "E_VALIDITY",
+      "seq": 7
+    },
+    {
+      "code": "E_APPROVAL_MISSING",
+      "seq": 9
+    }
+  ]
+}

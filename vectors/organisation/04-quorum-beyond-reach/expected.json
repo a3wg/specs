@@ -1,0 +1,10 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_NO_APPROVER",
+      "severity": "error",
+      "subject": "refund-approvals"
+    }
+  ]
+}

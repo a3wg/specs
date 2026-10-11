@@ -1,0 +1,15 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_DELEGATION_DISABLED",
+      "severity": "error",
+      "subject": "manager"
+    },
+    {
+      "code": "P_UNREACHABLE_ACTION",
+      "severity": "note",
+      "subject": "engineer"
+    }
+  ]
+}

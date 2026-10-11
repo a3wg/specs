@@ -1,0 +1,15 @@
+{
+  "result": "INCOHERENT",
+  "findings": [
+    {
+      "code": "C_UNSATISFIABLE_INTENT",
+      "severity": "error",
+      "subject": "manager"
+    },
+    {
+      "code": "C_ORPHAN_TOOL",
+      "severity": "warning",
+      "subject": "ledger"
+    }
+  ]
+}

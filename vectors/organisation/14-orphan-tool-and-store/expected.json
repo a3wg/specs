@@ -1,0 +1,20 @@
+{
+  "result": "COHERENT",
+  "findings": [
+    {
+      "code": "C_ORPHAN_TOOL",
+      "severity": "warning",
+      "subject": "pager"
+    },
+    {
+      "code": "C_STORE_NO_READER",
+      "severity": "warning",
+      "subject": "scratch"
+    },
+    {
+      "code": "C_STORE_NO_WRITER",
+      "severity": "warning",
+      "subject": "scratch"
+    }
+  ]
+}
